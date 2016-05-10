@@ -1,0 +1,56 @@
+.appli {
+  width: 400px;
+  height: 500px;
+  background-color: #61A1BC;
+}
+
+.header h1 {
+  color: #FEFEFE;
+  font-size: 50px;
+  padding-top: 25px;
+  text-align: center;
+}
+
+#elmts {
+  background-color: #D9ECF7;
+  width: 300px;
+  height: 60px;
+  margin-left: 50px;
+  margin-top: 20px;
+  text-align: center;
+  color: #80909F;
+  font-weight: bold;
+}
+
+#elmts p {
+  padding-top: 15px;
+  font-size: 13px;
+}
+
+.choix {
+  width: 300px;
+  height: 60px;
+  margin-left: 50px;
+  margin-top: 10px;
+  text-align: center;
+  background-color: #767676;
+  color: #FEFEFE;
+}
+
+.produit {
+  padding-top: 20px;
+}
+
+.total {
+  width: 300px;
+  height: 60px;
+  margin-left: 50px;
+  margin-top: 10px;
+  border-top: 1px solid #FEFEFE;
+  padding-top: 10px;
+  color: #FEFEFE;
+}
+
+.active {
+  background-color: green;
+}
