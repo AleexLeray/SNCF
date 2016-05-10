@@ -9,8 +9,8 @@
  font-family: "Avenir";
  src: url('../font/Avenir-Light.ttf');
 }
-$backgroundHeaderAl: #BEE0D3;
-$colorHeaderAl: #C447B7;
+$backgroundHeaderAl: #013440;
+$colorHeaderAl: #AB1A25;
 
 body {
   font-family: Avenir;
@@ -37,13 +37,61 @@ header {
     }
 }
 
+
+
+
 .contactAl {
-  height: 300px;
-  background-color: red;
+  height: auto;
+    .nomAl {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      color: $colorHeaderAl;
+      font-size: 30px;
+      padding: 20px 0 40px 0;
+    }
+    .containerAl {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      padding-bottom: 50px;
+        .nameAl, .emailAl, textarea {
+          padding: 0;
+          margin: 0;
+          border: 0;
+          clear: both;
+          overflow: hidden;
+        }
+        .nameAl {
+          padding-bottom: 15px;
+        }
+        .emailAl {
+          padding-bottom: 15px;
+            input {
+              width: 300px;
+            }
+        }
+        textarea {
+          height: 200px;
+          box-shadow: 4px 5px 4px  $backgroundHeaderAl;
+          margin-bottom: 15px;
+        }
+        .sendAl {
+          padding-bottom: 15px;
+        }
+    }
 }
 
+
+
+
+
+
 footer {
-  position: fixed 0 auto;
+  position: fixed;
+    bottom: 0;
+  width: 100%;
   background-color: $backgroundHeaderAl;
     .FooterAl {
       display: flex;
