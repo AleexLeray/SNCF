@@ -96,16 +96,24 @@ header .logoAl h1 {
   font-size: 50px;
 }
 /* line 33, ../sass/screen.scss */
-header .logoAl p {
-  padding-right: 20px;
+header .logoAl .connectAl {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+/* line 39, ../sass/screen.scss */
+header .logoAl .connectAl p {
   font-size: 20px;
+  margin-right: 20px;
 }
 
-/* line 43, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 .contactAl {
   height: auto;
 }
-/* line 45, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 .contactAl .nomAl {
   display: flex;
   flex-direction: row;
@@ -114,7 +122,7 @@ header .logoAl p {
   font-size: 30px;
   padding: 20px 0 40px 0;
 }
-/* line 53, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 .contactAl .containerAl {
   display: flex;
   flex-direction: column;
@@ -122,7 +130,7 @@ header .logoAl p {
   height: auto;
   padding-bottom: 50px;
 }
-/* line 59, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 .contactAl .containerAl .nameAl, .contactAl .containerAl .emailAl, .contactAl .containerAl textarea {
   padding: 0;
   margin: 0;
@@ -130,37 +138,37 @@ header .logoAl p {
   clear: both;
   overflow: hidden;
 }
-/* line 66, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 .contactAl .containerAl .nameAl {
   padding-bottom: 15px;
 }
-/* line 69, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 .contactAl .containerAl .emailAl {
   padding-bottom: 15px;
 }
-/* line 71, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 .contactAl .containerAl .emailAl input {
   width: 300px;
 }
-/* line 75, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 .contactAl .containerAl textarea {
-  height: 200px;
   box-shadow: 4px 5px 4px #013440;
   margin-bottom: 15px;
+  height: 200px;
 }
-/* line 80, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 .contactAl .containerAl .sendAl {
   padding-bottom: 15px;
 }
 
-/* line 91, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 footer {
   position: fixed;
   bottom: 0;
   width: 100%;
   background-color: #013440;
 }
-/* line 96, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 footer .FooterAl {
   display: flex;
   flex-direction: row;
@@ -169,11 +177,11 @@ footer .FooterAl {
   padding: 20px 0 20px 0;
   font-size: 20px;
 }
-/* line 103, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 footer .FooterAl p {
   padding-right: 20px;
 }
-/* line 105, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 footer .FooterAl p a {
   text-decoration: none;
   color: #AB1A25;
