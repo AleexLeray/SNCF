@@ -4,6 +4,11 @@
     integrity: 'fVquC3DHMyHQJ7MasHkVMX2RLx5O6r2+Eh/NB9eZUSRGntVASwPIr1DFKzSpwTxD'
   };
 
+  const screen = {
+    path: '../../stylesheets/screen.css',
+    integrity: ''
+  };
+  
   const icomoon = {
     path: 'icomoon.css',
     integrity: ''
@@ -22,6 +27,7 @@ html(lang='fr')
     meta(content='width=device-width,initial-scale=1.0' name='viewport')
     title= 'Abonnement - La Boite à histoires'
     link(href=normalize.path, rel='stylesheet')
+    link(href=screen.pat, rel='stylesheet')
     link(href=icomoon.path, rel='stylesheet')
     link(href=abonnement.path, rel='stylesheet')
 
@@ -42,7 +48,18 @@ html(lang='fr')
       span(class='icon-toggle-off icon-2x')
       p(class='toggle-offering__text')= 'Offrir'
     
-    section
-      h2
+    section(class='connexion')
+      h2= 'Connection (facultatif)'
+      h3!= `Si vous possédez un compte, vous pouvez vous connecter ici. Sinon, vous pouvez également en créer un avant d'être redirigé vers la page de paiement en cliquant <a href='#'>ici</a>.`
+      div
+        form(action='', method='post')
+          div
+            label(for='email')='Courriel:'
+            input(id='email', type='email')
+          div
+            label(for='password')='Mot de passe:'
+            input(id='password', type='password')
+          div
+            button(type='submit')='Se connecter'
     
   script(async, src='abonnement.js')
