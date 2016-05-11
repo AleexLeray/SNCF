@@ -92,10 +92,12 @@ header .logoAl {
   padding: 20px 0px 20px 20px;
 }
 /* line 30, ../sass/screen.scss */
-header .logoAl h1 {
+header .logoAl h1 a {
   font-size: 50px;
+  text-decoration: none;
+  color: #AB1A25;
 }
-/* line 33, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 header .logoAl .connectAl {
   display: flex;
   flex-direction: row;
@@ -103,13 +105,13 @@ header .logoAl .connectAl {
   justify-content: center;
   margin-right: 20px;
 }
-/* line 39, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 header .logoAl .connectAl p {
   font-size: 20px;
   margin-right: 20px;
 }
 
-/* line 50, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 .contactAl {
   background-image: url(../images/biblio.jpg);
   background-position: center;
@@ -117,7 +119,7 @@ header .logoAl .connectAl p {
   background-size: cover;
   height: 747px;
 }
-/* line 56, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 .contactAl .nomAl {
   display: flex;
   flex-direction: row;
@@ -126,7 +128,7 @@ header .logoAl .connectAl p {
   font-size: 30px;
   padding: 20px 0 40px 0;
 }
-/* line 64, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 .contactAl .containerAl {
   display: flex;
   flex-direction: column;
@@ -134,7 +136,7 @@ header .logoAl .connectAl p {
   height: auto;
   padding-bottom: 50px;
 }
-/* line 70, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 .contactAl .containerAl .nameAl, .contactAl .containerAl .emailAl, .contactAl .containerAl textarea {
   padding: 0;
   margin: 0;
@@ -142,31 +144,31 @@ header .logoAl .connectAl p {
   clear: both;
   overflow: hidden;
 }
-/* line 77, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 .contactAl .containerAl .nameAl {
   padding-bottom: 15px;
 }
-/* line 80, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 .contactAl .containerAl .emailAl {
   padding-bottom: 15px;
 }
-/* line 82, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 .contactAl .containerAl .emailAl input {
   width: 300px;
 }
-/* line 86, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 .contactAl .containerAl textarea {
   box-shadow: 4px 5px 4px #013440;
   margin-bottom: 15px;
   height: 400px;
   width: 400px;
 }
-/* line 92, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 .contactAl .containerAl .sendAl {
   padding-bottom: 15px;
 }
 
-/* line 98, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 .mentionsAl {
   margin-left: 10%;
   width: 80%;
@@ -178,12 +180,19 @@ header .logoAl .connectAl p {
 }
 
 /* line 111, ../sass/screen.scss */
+.nomMentionsAl {
+  color: #AB1A25;
+  font-size: 30px;
+  padding: 20px 0 40px 0;
+}
+
+/* line 118, ../sass/screen.scss */
 footer {
   margin-bottom: 0;
   width: 100%;
   background-color: #013440;
 }
-/* line 115, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 footer .FooterAl {
   display: flex;
   flex-direction: row;
@@ -192,11 +201,11 @@ footer .FooterAl {
   padding: 20px 0 20px 0;
   font-size: 20px;
 }
-/* line 122, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 footer .FooterAl p {
   padding-right: 20px;
 }
-/* line 124, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 footer .FooterAl p a {
   text-decoration: none;
   color: #AB1A25;
