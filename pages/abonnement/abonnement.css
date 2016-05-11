@@ -27,6 +27,9 @@ h2 {
 h3 {
   font-size: 1.17rem; }
 
+.aligned-self--center {
+  align-self: center; }
+
 .text-underlined {
   text-decoration: underline; }
 
@@ -66,7 +69,26 @@ h3 {
   flex-basis: 20rem;
   height: 30rem;
   padding: 1rem;
+  cursor: pointer;
   position: relative; }
+
+.card:nth-of-type(1) {
+  background-color: rgba(233, 183, 103, 0.52); }
+
+.card:nth-of-type(1):hover {
+  background-color: rgba(233, 183, 103, 0.72); }
+
+.card:nth-of-type(2) {
+  background-color: rgba(233, 229, 103, 0.52); }
+
+.card:nth-of-type(2):hover {
+  background-color: rgba(233, 229, 103, 0.72); }
+
+.card:nth-of-type(3) {
+  background-color: rgba(147, 233, 103, 0.52); }
+
+.card:nth-of-type(3):hover {
+  background-color: rgba(147, 233, 103, 0.72); }
 
 .card__price {
   bottom: 0;
@@ -104,6 +126,9 @@ h3 {
 .connexion {
   align-items: center;
   align-self: center;
+  background-color: rgba(103, 186, 233, 0.15);
+  border-radius: 1rem;
+  box-sizing: border-box;
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
   display: -ms-flexbox;
@@ -113,18 +138,37 @@ h3 {
   display: flex;
   /* NEW, Spec - Firefox, Chrome, Opera */
   flex-flow: column wrap;
+  margin: 2rem 0;
+  padding: 2rem;
   width: 30%; }
   .connexion form {
+    background-color: rgba(103, 186, 233, 0.3);
+    border: 0.1rem solid #67bae9;
+    border-radius: 1rem;
     padding: 1rem;
-    border: 0.1rem solid #CCC;
-    border-radius: 1rem; }
+    width: 90%; }
     .connexion form div + div {
       margin-top: 1rem; }
+    .connexion form input {
+      width: 50%; }
     .connexion form label {
       display: inline-block;
       width: 7rem;
       text-align: right; }
     .connexion form button {
       margin-left: 7.3rem; }
+
+.connexion__container {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  /* NEW, Spec - Firefox, Chrome, Opera */
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%; }
 
 /*# sourceMappingURL=abonnement.css.map */

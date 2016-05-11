@@ -33,13 +33,13 @@
       <p class="toggle-offering__text">Offrir</p>
     </div>
     <section class="connexion">
-      <h2>Connection (facultatif)</h2>
+      <h2 class="text-underlined">Connection (facultatif)</h2>
       <h3>Si vous possédez un compte, vous pouvez vous connecter ici. Sinon, vous pouvez également en créer un avant d'être redirigé vers la page de paiement en cliquant <a href='#'>ici</a>.</h3>
-      <div>
+      <div class="connexion__container">
         <form action="" method="post">
           <div>
             <label for="email">Courriel:</label>
-            <input id="email" type="email">
+            <input id="email" placeholder="martin.dupont@posteo.de" type="email">
           </div>
           <div>
             <label for="password">Mot de passe:</label>
@@ -51,6 +51,7 @@
         </form>
       </div>
     </section>
+    <button class="aligned-self--center" type="button">Procéder au paiement</button>
   </body>
   <script async src="abonnement.js"></script>
 </html>
