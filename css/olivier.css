@@ -1,0 +1,78 @@
+/*#C447B7 violet*/
+/*#67B9E9 blue*/
+/*---------- ------------*\
+        Font-face
+\*---------- ------------*/
+
+
+@font-face {
+
+}
+
+
+
+
+
+/*---------- ------------*\
+       Généralités
+\*---------- ------------*/
+
+
+h4 {
+  font-family: ;
+}
+
+
+
+
+
+/*---------- ------------*\
+          Cartes
+\*---------- ------------*/
+
+
+.livreOc {
+  height: 60vh;
+  width: 22vw;
+}
+
+/*-- Image --*/
+
+.imageOc {
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0288D1;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.imgOc {
+  height: 40vh;
+  width: auto;
+}
+
+/*-- Titre --*/
+
+.titreOc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  border: 2px solid #bfbfbf;
+  border-top: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.lienModal {
+  color: #333333;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.lienModal:hover {
+  color: #0d0d0d;
+  text-decoration: none;
+}
