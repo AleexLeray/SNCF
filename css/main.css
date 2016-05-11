@@ -1,0 +1,111 @@
+.acceuil {
+  height: 80vh;
+  width: 100%;
+  background-image: url("../images/crossword.png");
+  flex-direction: column; }
+  .acceuil .info-shop-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 70px; }
+    .acceuil .info-shop-main .info-shop {
+      height: 600px;
+      width: 200px;
+      position: relative;
+      display: flex;
+      flex-direction: column; }
+      .acceuil .info-shop-main .info-shop .voir-plus {
+        width: 100%;
+        height: 5vh;
+        font-size: 15px;
+        font-family: "Montserrat", sans-serif; }
+      .acceuil .info-shop-main .info-shop .example-livre {
+        width: 200px;
+        height: 300px;
+        background-size: cover;
+        z-index: 3;
+        display: flex;
+        color: #0088CE;
+        font-weight: bold;
+        font-size: 20px;
+        transition: all 0s ease-in-out; }
+        .acceuil .info-shop-main .info-shop .example-livre .hover-text {
+          display: none;
+          margin: auto; }
+      .acceuil .info-shop-main .info-shop .livre1 {
+        background-image: url("../images/lor.jpg"); }
+      .acceuil .info-shop-main .info-shop .livre3 {
+        background-image: url("../images/lac.jpg"); }
+      .acceuil .info-shop-main .info-shop .livre2 {
+        background-image: url("../images/sil.jpg"); }
+      .acceuil .info-shop-main .info-shop .livre4 {
+        background-image: url("../images/inception.jpg"); }
+      .acceuil .info-shop-main .info-shop .example-livre:hover {
+        background-color: rgba(0, 0, 0, 0.4);
+        background-blend-mode: darken;
+        transition: all 0.2s ease-in-out; }
+      .acceuil .info-shop-main .info-shop .example-livre:hover p {
+        display: block;
+        transition: all 0.2s ease-in-out; }
+    .acceuil .info-shop-main .bh-info {
+      height: 50vh;
+      width: 35%;
+      font-family: "Montserrat", sans-serif;
+      color: #fff;
+      padding: 20px; }
+      .acceuil .info-shop-main .bh-info h1 {
+        font-size: 37px;
+        text-align: center;
+        color: #CB0044; }
+      .acceuil .info-shop-main .bh-info .decouverte-box-gauche {
+        margin-top: 50px;
+        display: flex;
+        justify-content: fle-start; }
+      .acceuil .info-shop-main .bh-info .decouverte-box1 {
+        display: flex;
+        align-items: center;
+        color: #FFB612;
+        height: 13vh;
+        width: 35%;
+        padding: 30px;
+        margin-left: 20px;
+        font-size: 25px; }
+      .acceuil .info-shop-main .bh-info .decouverte-box-droite {
+        display: flex;
+        justify-content: flex-end; }
+      .acceuil .info-shop-main .bh-info .decouverte-box2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #7AB800;
+        height: 13vh;
+        width: 35%;
+        padding: 30px;
+        margin-right: 20px;
+        font-size: 25px; }
+  .acceuil .info-shop-subscribe {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center; }
+    .acceuil .info-shop-subscribe .button-subscribe {
+      border: 2px solid #0088CE;
+      background-color: #0088CE;
+      width: 20%;
+      height: 15vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 20px; }
+      .acceuil .info-shop-subscribe .button-subscribe .button-shop {
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 28px;
+        font-family: "Montserrat", sans-serif; }
+        .acceuil .info-shop-subscribe .button-subscribe .button-shop a {
+          text-decoration: none;
+          color: #fff; }
+        .acceuil .info-shop-subscribe .button-subscribe .button-shop a:hover {
+          font-size: 25px; }
