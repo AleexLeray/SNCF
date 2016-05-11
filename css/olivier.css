@@ -6,7 +6,8 @@
 
 
 @font-face {
-
+ font-family: "Avenir";
+ src: url('../font/Avenir-Light.ttf');
 }
 
 
@@ -19,7 +20,39 @@
 
 
 h4 {
-  font-family: ;
+  font-family: Avenir;
+}
+
+
+
+
+
+/*---------- ------------*\
+        Formulaire
+\*---------- ------------*/
+
+
+.formulaireOc {
+  padding: 20px;
+  padding-top: 40px;
+}
+
+.textOc {
+  padding: 5px;
+}
+
+.boutonOc{
+  background-color: #0288D1;
+  color: white;
+  border: 2px solid #0288D1;
+  border-radius: 3px;
+  padding: 5px 10px;
+  transition: ease 0.4s;
+}
+
+.boutonOc:hover {
+  background-color: white;
+  color: #0288D1;
 }
 
 
@@ -31,25 +64,29 @@ h4 {
 \*---------- ------------*/
 
 
+.cartesNiveauOc {
+  padding: 20px;
+}
+
 .livreOc {
-  height: 60vh;
+  height: 500px;
   width: 22vw;
 }
 
 /*-- Image --*/
 
 .imageOc {
-  height: 45vh;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #0288D1;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
 }
 
+
+
 .imgOc {
-  height: 40vh;
+  height: 250px;
   width: auto;
 }
 
@@ -57,22 +94,128 @@ h4 {
 
 .titreOc {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  height: 15vh;
+  height: 100px;
   border: 2px solid #bfbfbf;
   border-top: none;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  padding-top: 10px;
 }
 
-.lienModal {
+.lienModalOc {
   color: #333333;
   font-size: 20px;
   text-decoration: none;
 }
 
-.lienModal:hover {
+.lienModalOc:hover {
   color: #0d0d0d;
   text-decoration: none;
 }
+
+.priceOc {
+  width: 100%;
+  border-top: 1px solid #b7b7b7;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.prixOc {
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+
+
+
+/*---------- ------------*\
+        Hover-Box
+\*---------- ------------*/
+
+
+.hoverBoxOc {
+  display: none;
+}
+
+.carteOc {
+  position: relative;
+}
+
+.carteOc:hover .hoverBoxOc {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+
+
+
+
+/*---------- ------------*\
+        Modal-Box
+\*---------- ------------*/
+
+
+.modalDialogOc {
+	position: fixed;
+	font-family: Avenir, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialogOc:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialogOc > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+
+.closeOc {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.closeOc:hover { background: #00d9ff; }
