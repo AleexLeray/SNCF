@@ -48,7 +48,11 @@ header {
 
 
 .contactAl {
-  height: auto;
+  background-image: url(../images/biblio.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 747px;
     .nomAl {
       display: flex;
       flex-direction: row;
@@ -82,7 +86,8 @@ header {
         textarea {
           box-shadow: 4px 5px 4px  $backgroundHeaderAl;
           margin-bottom: 15px;
-          height: 200px;
+          height: 400px;
+          width: 400px;
         }
         .sendAl {
           padding-bottom: 15px;
@@ -96,8 +101,7 @@ header {
 
 
 footer {
-  position: fixed;
-    bottom: 0;
+  margin-bottom: 0;
   width: 100%;
   background-color: $backgroundHeaderAl;
     .FooterAl {
