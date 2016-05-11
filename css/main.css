@@ -64,4 +64,21 @@
           #main .acceuil .info-shop-subscribe .button-subscribe .button-shop a:hover {
             font-size: 25px; }
     #main .acceuil .les-livres {
-      height: 351px; }
+      height: 351px;
+      display: flex;
+      justify-content: space-around;
+      padding-top: 70px; }
+      #main .acceuil .les-livres .slider {
+        background-color: red;
+        height: 400px;
+        width: 15%; }
+      #main .acceuil .les-livres .img1 {
+        background-image: url("../images/giratoire.png"); }
+      #main .acceuil .les-livres .img2 {
+        background-image: url("../images/essai.png"); }
+      #main .acceuil .les-livres .img3 {
+        background-image: url("../images/lite.png"); }
+      #main .acceuil .les-livres .img4 {
+        background-image: url("../images/scifi.png"); }
+      #main .acceuil .les-livres .img5 {
+        background-image: url("../images/polar.png"); }
