@@ -10,137 +10,80 @@ $color-text: #fff
   src: url("../font/Avenir-Light.ttf")
 
 
-
-.acceuil
-	height: 80vh
-	width: 100%
-	background-image: url('../images/crossword.png')
-	flex-direction: column
-	.bouqin-principal
-		background-color: yellow
-		height: 351px
-		background-position: center bottom
-		background-size: cover
-	.info-shop-main
-		display: flex
-		justify-content: space-around
-		align-items: center
+#main
+	background-image: url('../images/book.jpg')
+	background-size: cover
+	
+	.acceuil
+		height: 143vh
 		width: 100%
-		margin-top: 70px
-		margin-bottom: 70px
-		.info-shop
-			height: 800px
-			width: 200px
-		
-			position: relative
-			display: flex
-			flex-direction: column
-			.voir-plus	
-				margin-bottom: 20px
-				width: 100%
-				height: 5vh
-				font-size: 17px
-				font-family: $font
-		
-			.example-livre
-				width: 200px
-				height: 300px
-				background-size: cover
-				z-index: 3;
-				display: flex;
-				color: $secondary-color
-				font-weight: bold;
-				font-size: 20px;
-				transition: all 0s ease-in-out
-				.hover-text
-					display: none
-					margin: auto
-			.livre1
-				background-image: url('../images/cfrdf.png')
-			.livre3
-				background-image: url('../images/giratoire.png')
-			.livre2
-				background-image: url('../images/scifi.png')
-			.livre4
-				background-image: url('../images/polar.png')
-
-
-			.example-livre:hover 
-				background-color: rgba(0,0,0,0.4)
-				background-blend-mode: darken
-				transition: all 0.2s ease-in-out
-
-			.example-livre:hover p 
-				display: block
-				transition: all 0.2s ease-in-out;
-
-		.bh-info
-			height: 50vh
-			width: 60%
-			font-family: $font
-			color: $color-text
-
-			h1
-				font-size: 37px
-				text-align: center
-				color: $primary-color
-			.decouverte-box-gauche
-				margin-top: 50px
-				display: flex
-
-			.decouverte-box1
-				display: flex
-				align-items: center
-				color: $third-color
-				height: 13vh
-				width: 50%
-				padding: 30px
-				margin-left: 20px
-				font-size: 25px
-				//border-bottom: 2px solid $third-color
-			.decouverte-box-droite
-				display: flex
-			.decouverte-box2
-				display: flex
-				align-items: center
-				justify-content: center
-				color: $forth-color
-				height: 13vh
-				width: 70%
-				padding: 70px
-				margin-right: 20px 
-				font-size: 25px
-				//border-bottom: 2px solid $forth-color
-	.info-shop-subscribe
-		width: 100%
-		height: 20vh
-		display: flex
-		justify-content: center
-		.button-subscribe
-			border: 2px solid $secondary-color
-			background-color: $secondary-color
-			width: 25%
-			height: 15vh
+		//background-image: url('../images/crossword.png')
+		flex-direction: column
+		.bouqin-principal
+			height: 451px
+			background-color: rgba(0,0,0,0.4)
+			background-position: center bottom
+			background-size: cover
 			display: flex
 			justify-content: center
 			align-items: center
-			margin-left: 20px
-			.button-shop
-				
-				text-decoration: none
-				font-size: 28px
+			h1
+				font-size: 60px
+				font-weight: bold
+				color: $primary-color
+		.info-shop-main
+			display: flex
+			justify-content: space-around
+			align-items: center
+			width: 100%
+
+			margin-bottom: 70px
+		.background-central
+			background-image: url('../images/crossword.png')
+			.bh-info
+				height: 40vh
+				width: 60%
 				font-family: $font
-				a
+				color: $color-text
+
+				h1
+					font-size: 37px
+					text-align: center
+					color: $primary-color
+				.decouverte-box
+					color: black
+		.info-shop-subscribe
+			width: 100%
+			height: 20vh
+			display: flex
+			justify-content: center
+			.button-subscribe
+				border: 2px solid $secondary-color
+				background-color: $secondary-color
+				width: 25%
+				height: 10vh
+				display: flex
+				justify-content: center
+				align-items: center
+				margin-left: 20px
+				.button-shop
+					
 					text-decoration: none
-					color: $color-text
+					font-size: 28px
+					font-family: $font
+					a
+						text-decoration: none
+						color: $color-text
 
-				a:hover
-					font-size: 25px
+					a:hover
+						font-size: 25px
+		.les-livres
+			//background-image: url('../images/shattered.png')
+			height: 351px
 
 
 
 
 
 
-
-		
+			
