@@ -49,17 +49,17 @@ html(lang='fr')
       p(class='toggle-offering__text')= 'Offrir'
     
     section(class='connexion')
-      h2(class='text-underlined')= 'Connection (facultatif)'
+      h2(class='text-underlined')= 'Se connecter'
       h3!= `Si vous possédez un compte, vous pouvez vous connecter ici. Sinon, vous pouvez également en créer un avant d'être redirigé vers la page de paiement en cliquant <a href='#'>ici</a>.`
       div(class='connexion__container')
         form(action='', method='post')
           div
             label(for='email')='Courriel:'
-            input(id='email', placeholder='martin.dupont@posteo.de', type='email')
+            input(id='email', placeholder='martin.dupont@posteo.de', required, type='email')
           div
             label(for='password')='Mot de passe:'
-            input(id='password', type='password')
+            input(id='password', required, type='password')
           div
             button(type='submit')='Se connecter'
-    button(type='button', class='aligned-self--center')= 'Procéder au paiement'
+    button(type='button', class='btn-validate aligned-self--center')= 'Procéder au paiement'
   script(async, src='abonnement.js')
