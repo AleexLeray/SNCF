@@ -166,14 +166,24 @@ header .logoAl .connectAl p {
   padding-bottom: 15px;
 }
 
-/* line 103, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
+.mentionsAl {
+  margin-left: 10%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  text-align: justify;
+}
+
+/* line 111, ../sass/screen.scss */
 footer {
-  position: relative;
-  bottom: 0;
+  margin-bottom: 0;
   width: 100%;
   background-color: #013440;
 }
-/* line 108, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 footer .FooterAl {
   display: flex;
   flex-direction: row;
@@ -182,11 +192,11 @@ footer .FooterAl {
   padding: 20px 0 20px 0;
   font-size: 20px;
 }
-/* line 115, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 footer .FooterAl p {
   padding-right: 20px;
 }
-/* line 117, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 footer .FooterAl p a {
   text-decoration: none;
   color: #AB1A25;
