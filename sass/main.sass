@@ -2,8 +2,14 @@ $primary-color: #CB0044
 $secondary-color: #0088CE
 $third-color: #FFB612
 $forth-color: #7AB800
-$montserat: 'Montserrat', sans-serif
+$font: "Avenir"
 $color-text: #fff
+
+@font-face 
+  font-family: "Avenir"
+  src: url("../font/Avenir-Light.ttf")
+
+
 
 .acceuil
 	height: 80vh
@@ -30,8 +36,8 @@ $color-text: #fff
 				width: 100%
 				height: 5vh
 				font-size: 15px
-				font-family: $montserat
-				//margin: 20px
+				font-family: $font
+		
 			.example-livre
 				width: 200px
 				height: 300px
@@ -67,7 +73,7 @@ $color-text: #fff
 		.bh-info
 			height: 50vh
 			width: 35%
-			font-family: $montserat
+			font-family: $font
 			color: $color-text
 			padding: 20px
 			h1
@@ -110,17 +116,17 @@ $color-text: #fff
 		.button-subscribe
 			border: 2px solid $secondary-color
 			background-color: $secondary-color
-			width: 20%
+			width: 25%
 			height: 15vh
 			display: flex
 			justify-content: center
 			align-items: center
 			margin-left: 20px
 			.button-shop
-				font-weight: bold
+				
 				text-decoration: none
 				font-size: 28px
-				font-family: $montserat
+				font-family: $font
 				a
 					text-decoration: none
 					color: $color-text
