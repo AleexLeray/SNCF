@@ -27,8 +27,10 @@ header {
       justify-content: space-between;
       color: $colorHeaderAl;
       padding: 20px 0px 20px 20px;
-        h1 {
+        h1 a {
           font-size: 50px;
+          text-decoration: none;
+          color: $colorHeaderAl;
         }
       .connectAl {
         display: flex;
@@ -95,9 +97,22 @@ header {
     }
 }
 
+.mentionsAl {
+  margin-left: 10%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  text-align: justify;
+}
 
 
-
+.nomMentionsAl {
+  color: $colorHeaderAl;
+  font-size: 30px;
+  padding: 20px 0 40px 0;
+}
 
 
 footer {
