@@ -7,6 +7,11 @@
   width: 100%;
   background-image: url("../images/crossword.png");
   flex-direction: column; }
+  .acceuil .bouqin-principal {
+    background-color: yellow;
+    height: 351px;
+    background-position: center bottom;
+    background-size: cover; }
   .acceuil .info-shop-main {
     display: flex;
     justify-content: space-around;
@@ -15,15 +20,16 @@
     margin-top: 70px;
     margin-bottom: 70px; }
     .acceuil .info-shop-main .info-shop {
-      height: 600px;
+      height: 800px;
       width: 200px;
       position: relative;
       display: flex;
       flex-direction: column; }
       .acceuil .info-shop-main .info-shop .voir-plus {
+        margin-bottom: 20px;
         width: 100%;
         height: 5vh;
-        font-size: 15px;
+        font-size: 17px;
         font-family: "Avenir"; }
       .acceuil .info-shop-main .info-shop .example-livre {
         width: 200px;
@@ -39,13 +45,13 @@
           display: none;
           margin: auto; }
       .acceuil .info-shop-main .info-shop .livre1 {
-        background-image: url("../images/lor.jpg"); }
+        background-image: url("../images/cfrdf.png"); }
       .acceuil .info-shop-main .info-shop .livre3 {
-        background-image: url("../images/lac.jpg"); }
+        background-image: url("../images/giratoire.png"); }
       .acceuil .info-shop-main .info-shop .livre2 {
-        background-image: url("../images/sil.jpg"); }
+        background-image: url("../images/scifi.png"); }
       .acceuil .info-shop-main .info-shop .livre4 {
-        background-image: url("../images/inception.jpg"); }
+        background-image: url("../images/polar.png"); }
       .acceuil .info-shop-main .info-shop .example-livre:hover {
         background-color: rgba(0, 0, 0, 0.4);
         background-blend-mode: darken;
@@ -55,38 +61,35 @@
         transition: all 0.2s ease-in-out; }
     .acceuil .info-shop-main .bh-info {
       height: 50vh;
-      width: 35%;
+      width: 60%;
       font-family: "Avenir";
-      color: #fff;
-      padding: 20px; }
+      color: #fff; }
       .acceuil .info-shop-main .bh-info h1 {
         font-size: 37px;
         text-align: center;
         color: #CB0044; }
       .acceuil .info-shop-main .bh-info .decouverte-box-gauche {
         margin-top: 50px;
-        display: flex;
-        justify-content: fle-start; }
+        display: flex; }
       .acceuil .info-shop-main .bh-info .decouverte-box1 {
         display: flex;
         align-items: center;
         color: #FFB612;
         height: 13vh;
-        width: 35%;
+        width: 50%;
         padding: 30px;
         margin-left: 20px;
         font-size: 25px; }
       .acceuil .info-shop-main .bh-info .decouverte-box-droite {
-        display: flex;
-        justify-content: flex-end; }
+        display: flex; }
       .acceuil .info-shop-main .bh-info .decouverte-box2 {
         display: flex;
         align-items: center;
         justify-content: center;
         color: #7AB800;
         height: 13vh;
-        width: 35%;
-        padding: 30px;
+        width: 70%;
+        padding: 70px;
         margin-right: 20px;
         font-size: 25px; }
   .acceuil .info-shop-subscribe {

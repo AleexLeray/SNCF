@@ -16,7 +16,11 @@ $color-text: #fff
 	width: 100%
 	background-image: url('../images/crossword.png')
 	flex-direction: column
-
+	.bouqin-principal
+		background-color: yellow
+		height: 351px
+		background-position: center bottom
+		background-size: cover
 	.info-shop-main
 		display: flex
 		justify-content: space-around
@@ -25,17 +29,17 @@ $color-text: #fff
 		margin-top: 70px
 		margin-bottom: 70px
 		.info-shop
-			height: 600px
+			height: 800px
 			width: 200px
-
+		
 			position: relative
 			display: flex
 			flex-direction: column
 			.voir-plus	
-
+				margin-bottom: 20px
 				width: 100%
 				height: 5vh
-				font-size: 15px
+				font-size: 17px
 				font-family: $font
 		
 			.example-livre
@@ -52,13 +56,13 @@ $color-text: #fff
 					display: none
 					margin: auto
 			.livre1
-				background-image: url('../images/lor.jpg')
+				background-image: url('../images/cfrdf.png')
 			.livre3
-				background-image: url('../images/lac.jpg')
+				background-image: url('../images/giratoire.png')
 			.livre2
-				background-image: url('../images/sil.jpg')
+				background-image: url('../images/scifi.png')
 			.livre4
-				background-image: url('../images/inception.jpg')
+				background-image: url('../images/polar.png')
 
 
 			.example-livre:hover 
@@ -72,10 +76,10 @@ $color-text: #fff
 
 		.bh-info
 			height: 50vh
-			width: 35%
+			width: 60%
 			font-family: $font
 			color: $color-text
-			padding: 20px
+
 			h1
 				font-size: 37px
 				text-align: center
@@ -83,28 +87,27 @@ $color-text: #fff
 			.decouverte-box-gauche
 				margin-top: 50px
 				display: flex
-				justify-content: fle-start
+
 			.decouverte-box1
 				display: flex
 				align-items: center
 				color: $third-color
 				height: 13vh
-				width: 35%
+				width: 50%
 				padding: 30px
 				margin-left: 20px
 				font-size: 25px
 				//border-bottom: 2px solid $third-color
 			.decouverte-box-droite
 				display: flex
-				justify-content: flex-end
 			.decouverte-box2
 				display: flex
 				align-items: center
 				justify-content: center
 				color: $forth-color
 				height: 13vh
-				width: 35%
-				padding: 30px
+				width: 70%
+				padding: 70px
 				margin-right: 20px 
 				font-size: 25px
 				//border-bottom: 2px solid $forth-color
