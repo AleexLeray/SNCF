@@ -3,9 +3,8 @@
   src: url("../font/Avenir-Light.ttf"); }
 
 #main {
-      background-image: url('../images/crossword.png')
-*/
-  background-size: cover; }
+      background-image: url('../images/crossword.png');
+ }
   #main .acceuil {
     height: 200vh;
     width: 100%;
@@ -18,13 +17,13 @@
       display: flex;
       justify-content: space-around;
       align-items: center; 
-      background-image: url("../images/book.jpg");
+      background-image: url("../images/book2.jpg");
       background-size: cover;
       background-position: 50% 50%;
   }
 
       .concept-bh {
-        width: 50%;
+        width: 500%;
         height: 100%;
         display: flex;
         justify-content: center;
@@ -32,24 +31,25 @@
         text-align: center;
         font-size: 25px;
         font-weight: bold;
-        text-shadow: 1px 1px grey;
+        text-shadow: 1px 1px black;
+        color: rgba(1,52,64,1);
       }
       .boite1{
-        background-color: rgba(255,255,255,0.1);
+        background-color: rgba(1,52,64,0.4) ;
         display: flex;
         flex-direction: column;      }
       .boite2{
-        background-color: rgba(255,255,255,0.2);
+        background-color: rgba(1,52,64,0.3);
         display: flex;
         flex-direction: column;
       }
       .boite3 {
-        background-color: rgba(255,255,255,0.1);
+        background-color: rgba(1,52,64,0.4) ;
         display: flex;
         flex-direction: column;
       }
       .boite4 {
-        background-color: rgba(255,255,255,0.2);
+        background-color: rgba(1,52,64,0.3);
         display: flex;
         flex-direction: column;
       }
@@ -255,7 +255,7 @@
 }
 
 .text-appear {
-  background-color: rgba(1,52,64,0.6);
+  background-color: rgba(1,52,64,0.6) ;
   width: 100%;
   position: absolute;
   top: 50%;
@@ -268,13 +268,17 @@
   letter-spacing: 4px;
   display: table;
   transition: height .3s, background .3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .text-appear span {
   display: table-cell;
   vertical-align: middle;
-  color: #ffff;
+  color: white;
   transition: all .3s;
+  font-size: 30px;
 }
 .block-mise-avant a {
   text-decoration: none;
@@ -283,9 +287,37 @@
 
 .text-appear:hover{
   height: 340px;
+  width: 330px;
+  background-color: rgba(255,255,255,0.1);
+  border: 6px solid rgba(1,52,64,0.6);
 }
+
+.text-appear:hover span {
+  color: black;
+}
+
 .btn {
   display: none;
   opacity: 0;
   white-space: nowrap;
+}
+
+.text-appear:hover .btn {
+  display: block;
+  opacity: 1;
+  position: absolute;
+  bottom: 90px;
+  left: 20px;
+  text-align: center;
+  background-color: rgba(1,52,64,0.8);
+  padding: 0 30px;
+  border-radius: 40px;
+  height: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 40px;
+  transition: all .2s;
+  border: none;
+  color: #fff;
+
 }
