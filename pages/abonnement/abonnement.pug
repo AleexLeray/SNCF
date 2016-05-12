@@ -48,12 +48,17 @@ html(lang='fr')
           '6 mois': 'card--yellow',
           '1 an': 'card--green'
         };
+        var i = 0;
+        const prices = ['29.90', '58.90', '115.90'];
     
       each val, title in cards
         div(class=`card ${val}`)
           h3= title
-          p(class='card__description text-justified')= 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam ex eget mi venenatis viverra. Sed in urna massa. Pellentesque ligula urna, ornare et orci sit amet, viverra laoreet sapien. Nulla suscipit magna maximus nisl ultrices luctus. Phasellus congue ac elit at pulvinar. Aliquam ac finibus nisl, sit amet vehicula felis. Nullam lobortis quam ac auctor vehicula.'
-          p(class='card__price')= 'Prix: 29.90€'
+          ul
+            li= 'Langues disponibles: Français uniquement.'
+            li= 'Deux genres maximum au choix.'
+            li= 'Formats de poche et roman uniquement.'
+          p(class='card__price')= `Prix: ${prices[i++]}€`
     div(class='toggle-offering')
       p(class='toggle-offering__text')= 'Personel'
       span(class='icon-toggle-off icon-2x')

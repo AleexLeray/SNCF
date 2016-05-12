@@ -3,6 +3,7 @@ html {
   height: 100%; }
 
 body {
+  background-image: url("../../images/crossword.png");
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
   display: -ms-flexbox;
@@ -35,6 +36,12 @@ h2 {
 h3 {
   font-size: 1.17rem;
   font-weight: bold;
+  margin: 1rem 0; }
+
+ul {
+  list-style-type: disc; }
+
+li {
   margin: 1rem 0; }
 
 section p {
@@ -100,7 +107,7 @@ a {
   flex-basis: 20rem;
   height: 30rem;
   margin-bottom: 2rem;
-  padding: 1rem;
+  padding: 1rem 2rem;
   position: relative; }
 
 .card--orange {
