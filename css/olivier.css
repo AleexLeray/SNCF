@@ -19,6 +19,15 @@
 \*---------- ------------*/
 
 
+.containerOc {
+  display: flex;
+  justify-content: center;
+}
+
+.flexOc {
+  width: 80%;
+}
+
 h4 {
   font-family: Avenir;
 }
@@ -139,11 +148,11 @@ h4 {
   display: none;
 }
 
-.carteOc {
+.overBoardOc {
   position: relative;
 }
 
-.carteOc:hover .hoverBoxOc {
+.overBoardOc:hover .hoverBoxOc {
   height: 300px;
   display: flex;
   justify-content: center;

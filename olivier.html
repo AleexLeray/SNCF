@@ -13,48 +13,62 @@
     <link rel="stylesheet" type="text/css" href="css/olivier.css" />
     <link rel="stylesheet" href="stylesheets/screen.css" media="screen" title="no title" charset="utf-8">
   </head>
-  <body>
 
-    <div class="formulaireOc">
-      <form class="filtreOc" action="index.html" method="post">
-        <input class="textOc" type="text" placeholder="Genre">
-        <input class="boutonOc" type="button" name="Filtre" value="Filtrer">
-      </form>
-    </div>
+  <body ng-controller="">
+    <div class="containerOc">
+      <div class="flexOc">
 
-    <div class="cartesNiveauOc">
+        <div class="formulaireOc">
+          <form class="filtreOc" action="index.html" method="post">
+            <input class="textOc" type="text" placeholder="Genre">
+            <input class="boutonOc" type="button" name="Filtre" value="Filtrer">
+          </form>
+        </div>
 
-      <div class="livreOc">
-        <div class="carteOc">
-          <div class="hoverBoxOc">
-            <p>
-              {{infoLivre}}
-            </p>
-          </div>
+        <div class="cartesNiveauOc">
 
-          <div class="imageOc">
-            <img src="images/passagesaletranger.jpg" alt="Passages à l'étranger" class="imgOc" />
-          </div>
-          <div class="titreOc">
-            <h4><a href="#openModal" class="lienModalOc">Passages à L'étranger</a></h4>
-            <div class="priceOc">
-              <p class="prixOc">
-                {{prix}}
-              </p>
+          <div class="livreOc">
+            <div class="carteOc">
+
+              <div class="overBoardOc">
+                <div class="hoverBoxOc">
+                  <a href="#openModal" class="lienModalOc">
+                    <p>
+                      {{infoLivre}}
+                    </p>
+                  </a>                
+                </div>
+
+                <div class="imageOc">
+                  <img ng-src="" class="imgOc" />
+                </div>
+              </div>
+
+              <div class="titreOc">
+                <h4><a href="#openModal" class="lienModalOc">{{titre}}</a></h4>
+                <div class="priceOc">
+                  <p class="prixOc">
+                    {{prix}}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="modalDialogOc" id="openModal">
+              <div>
+            		<a href="#close" title="Close" class="closeOc">X</a>
+            		<h2>Modal Box</h2>
+            		<p>This is a sample modal box that can be created using the powers of CSS3.</p>
+            		<p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+            	</div>
             </div>
           </div>
+
         </div>
 
-        <div class="modalDialogOc" id="openModal">
-          <div>
-        		<a href="#close" title="Close" class="closeOc">X</a>
-        		<h2>Modal Box</h2>
-        		<p>This is a sample modal box that can be created using the powers of CSS3.</p>
-        		<p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
-        	</div>
-        </div>
       </div>
-
     </div>
+
+
   </body>
 </html>
