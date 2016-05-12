@@ -11,21 +11,37 @@ body {
   /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
   /* NEW, Spec - Firefox, Chrome, Opera */
-  font-family: Helvetica, sans-serif;
+  font-family: "Avenir", Helvetica, sans-serif;
   font-size: 1rem;
   flex-flow: column wrap;
   height: auto;
   margin: 0; }
 
-h1 {
+header,
+footer {
+  font-size: initial; }
+
+h1:nth-child(2) {
   align-self: center;
-  font-size: 2rem; }
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 2rem 0 .67rem 0; }
 
 h2 {
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: .83rem 0; }
 
 h3 {
-  font-size: 1.17rem; }
+  font-size: 1.17rem;
+  font-weight: bold;
+  margin: 1rem 0; }
+
+section p {
+  margin: 1rem 0; }
+
+a {
+  text-decoration: none; }
 
 .aligned-self--center {
   align-self: center; }
@@ -41,6 +57,7 @@ h3 {
   border: none;
   box-sizing: border-box;
   color: white;
+  margin: 1rem 0;
   padding: 1rem; }
 
 .cards-container {
@@ -86,19 +103,19 @@ h3 {
   background-color: rgba(233, 183, 103, 0.52); }
 
 .card--orange:hover {
-  background-color: rgba(233, 183, 103, 0.82) !important; }
+  background-color: rgba(233, 183, 103, 0.99) !important; }
 
 .card--yellow {
   background-color: rgba(233, 229, 103, 0.52); }
 
 .card--yellow:hover {
-  background-color: rgba(233, 229, 103, 0.82) !important; }
+  background-color: rgba(233, 229, 103, 0.99) !important; }
 
 .card--green {
   background-color: rgba(147, 233, 103, 0.52); }
 
 .card--green:hover {
-  background-color: rgba(147, 233, 103, 0.82) !important; }
+  background-color: rgba(147, 233, 103, 0.99) !important; }
 
 .card__price {
   bottom: 0;

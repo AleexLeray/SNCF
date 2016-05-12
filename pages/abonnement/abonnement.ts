@@ -22,7 +22,7 @@
 	  currentCard.style.backgroundColor = currentBackgroundColor.replace(/(\d\.\d+)/, '0.52');
         }
           const currentBackgroundColor: string = getComputedStyle(this, null).getPropertyValue("background-color");
-	  this.style.backgroundColor = currentBackgroundColor.replace(/(\d\.\d+)/, '0.82');
+	  this.style.backgroundColor = currentBackgroundColor.replace(/(\d\.\d+)/, '0.99');
       }
     };
 

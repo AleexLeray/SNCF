@@ -27,11 +27,17 @@ html(lang='fr')
     meta(content='width=device-width,initial-scale=1.0' name='viewport')
     title= 'Abonnement - La Boite à histoires'
     link(href=normalize.path, rel='stylesheet')
-    link(href=screen.pat, rel='stylesheet')
+    link(href=screen.path, rel='stylesheet')
     link(href=icomoon.path, rel='stylesheet')
     link(href=abonnement.path, rel='stylesheet')
 
   body
+    header
+      div(class='logoAl')
+        h1= 'La boite à Histoire'
+        div(class='connectAl')
+          p= 'Se connecter'
+          p!= `<span class='icon-shopping-basket' aria-hidden='true'></span>`
     h1(class='text-underlined')= 'Abonnement'
     
     section(class='cards-container')
@@ -66,5 +72,9 @@ html(lang='fr')
             input(id='password', required, type='password')
           div
             button(type='submit')='Se connecter'
-    button(type='button', class='btn-validate aligned-self--center')= 'Procéder au paiement'
+    a(class='btn-validate aligned-self--center', href='#')= 'Procéder au paiement'
+    footer
+      div(class='FooterAl')
+        p: a(href='#')= 'Contact'
+        p: a(href='#')= 'Mentions légales'
   script(async, src='abonnement.js')
