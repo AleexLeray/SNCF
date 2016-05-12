@@ -15,8 +15,13 @@
     };
     const selectCard = function () {
         if (this instanceof HTMLDivElement) {
+            for (let i = 2; i >= 0; i -= 1) {
+                const currentCard = cards[i];
+                const currentBackgroundColor = getComputedStyle(currentCard, null).getPropertyValue("background-color");
+                currentCard.style.backgroundColor = currentBackgroundColor.replace(/(\d\.\d+)/, '0.52');
+            }
             const currentBackgroundColor = getComputedStyle(this, null).getPropertyValue("background-color");
-            this.style.backgroundColor = currentBackgroundColor.replace(/(\d\.\d+)/, '0.72');
+            this.style.backgroundColor = currentBackgroundColor.replace(/(\d\.\d+)/, '0.82');
         }
     };
     const addEventsToNodeList = function (nodeList, index) {

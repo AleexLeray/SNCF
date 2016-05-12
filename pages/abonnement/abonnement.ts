@@ -16,8 +16,13 @@
 
     const selectCard = function (): void {
       if (this instanceof HTMLDivElement) {
-        const currentBackgroundColor: string = getComputedStyle(this, null).getPropertyValue("background-color");
-	this.style.backgroundColor = currentBackgroundColor.replace(/(\d\.\d+)/, '0.72');
+        for (let i = 2; i >= 0; i -= 1) {
+	  const currentCard: HTMLDivElement = <HTMLDivElement> cards[i];
+          const currentBackgroundColor: string = getComputedStyle(currentCard, null).getPropertyValue("background-color");
+	  currentCard.style.backgroundColor = currentBackgroundColor.replace(/(\d\.\d+)/, '0.52');
+        }
+          const currentBackgroundColor: string = getComputedStyle(this, null).getPropertyValue("background-color");
+	  this.style.backgroundColor = currentBackgroundColor.replace(/(\d\.\d+)/, '0.82');
       }
     };
 

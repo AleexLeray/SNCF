@@ -82,23 +82,23 @@ h3 {
   padding: 1rem;
   position: relative; }
 
-.card:nth-of-type(1) {
+.card--orange {
   background-color: rgba(233, 183, 103, 0.52); }
 
-.card:nth-of-type(1):hover {
-  background-color: rgba(233, 183, 103, 0.72); }
+.card--orange:hover {
+  background-color: rgba(233, 183, 103, 0.82) !important; }
 
-.card:nth-of-type(2) {
+.card--yellow {
   background-color: rgba(233, 229, 103, 0.52); }
 
-.card:nth-of-type(2):hover {
-  background-color: rgba(233, 229, 103, 0.72); }
+.card--yellow:hover {
+  background-color: rgba(233, 229, 103, 0.82) !important; }
 
-.card:nth-of-type(3) {
+.card--green {
   background-color: rgba(147, 233, 103, 0.52); }
 
-.card:nth-of-type(3):hover {
-  background-color: rgba(147, 233, 103, 0.72); }
+.card--green:hover {
+  background-color: rgba(147, 233, 103, 0.82) !important; }
 
 .card__price {
   bottom: 0;

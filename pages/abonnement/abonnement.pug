@@ -36,10 +36,15 @@ html(lang='fr')
     
     section(class='cards-container')
 
-      - const cards = ['3 mois', '6 mois', '1 an'];
+      -
+        const cards = {
+          '3 mois': 'card--orange',
+          '6 mois': 'card--yellow',
+          '1 an': 'card--green'
+        };
     
-      each title in cards
-        div(class='card')
+      each val, title in cards
+        div(class=`card ${val}`)
           h3= title
           p(class='card__description text-justified')= 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam ex eget mi venenatis viverra. Sed in urna massa. Pellentesque ligula urna, ornare et orci sit amet, viverra laoreet sapien. Nulla suscipit magna maximus nisl ultrices luctus. Phasellus congue ac elit at pulvinar. Aliquam ac finibus nisl, sit amet vehicula felis. Nullam lobortis quam ac auctor vehicula.'
           p(class='card__price')= 'Prix: 29.90€'
