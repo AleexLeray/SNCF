@@ -31,16 +31,16 @@
             <div class="carteOc">
 
               <div class="overBoardOc">
-                <div class="hoverBoxOc">
-                  <a href="#openModal" class="lienModalOc">
-                    <p>
-                      {{product.resume}}
-                    </p>
-                  </a>
-                </div>
+                <a href="#openModal" class="lienModalOc">
+                  <div class="hoverBoxOc">
+                      <p>
+                        {{product.resume}}
+                      </p>
+                  </div>
+                </a>
 
                 <div class="imageOc">
-                  <img ng-src="store.product.image" class="imgOc" />
+                  <img ng-src="{{product.image}}" class="imgOc" />
                 </div>
               </div>
 
@@ -57,9 +57,14 @@
             <div class="modalDialogOc" id="openModal">
               <div>
             		<a href="#close" title="Close" class="closeOc">X</a>
-            		<h2>Modal Box</h2>
-            		<p>This is a sample modal box that can be created using the powers of CSS3.</p>
-            		<p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+            		<h2>{{product.titre}}</h2>
+            		<p>
+                  {{product.resume}}
+                </p>
+                <p>
+                  {{product.prix | currency:"€"}}
+                </p>
+                <img src="{{product.image}}" class="imgOc"/>
             	</div>
             </div>
           </div>
