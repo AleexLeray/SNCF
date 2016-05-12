@@ -18,19 +18,22 @@
             for (let i = 2; i >= 0; i -= 1) {
                 const currentCard = cards[i];
                 const currentBackgroundColor = getComputedStyle(currentCard, null).getPropertyValue("background-color");
+                const currentClasses = currentCard.className;
+                currentCard.className = currentClasses.replace(/(box-shadowed)/, '');
                 currentCard.style.backgroundColor = currentBackgroundColor.replace(/(\d\.\d+)/, '0.52');
             }
             const currentBackgroundColor = getComputedStyle(this, null).getPropertyValue("background-color");
             this.style.backgroundColor = currentBackgroundColor.replace(/(\d\.\d+)/, '0.99');
+            this.className = `${this.className} box-shadowed`;
         }
     };
-    const addEventsToNodeList = function (nodeList, index) {
+    const addEventsToNodeList = function (nodeList, index, type, listener) {
         index -= 1;
         if (index >= 0) {
-            nodeList[index].addEventListener('click', selectCard);
-            addEventsToNodeList(nodeList, index);
+            nodeList[index].addEventListener(type, listener);
+            addEventsToNodeList(nodeList, index, type, listener);
         }
     };
-    addEventsToNodeList(cards, cards.length);
+    addEventsToNodeList(cards, cards.length, 'click', selectCard);
     toggleElement.addEventListener('click', toggle);
 })();
