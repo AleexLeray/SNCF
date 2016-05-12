@@ -34,7 +34,7 @@ html(lang='fr')
   body
     header
       div(class='logoAl')
-        h1= 'La Boite à Histoires'
+        h1: a(href='../../index.html')= 'La Boite à Histoires'
         div(class='connectAl')
           p= 'Se connecter'
           p!= `<span class='icon-shopping-basket' aria-hidden='true'></span>`
@@ -55,14 +55,22 @@ html(lang='fr')
         div(class=`card ${val}`)
           h3= title
           ul
+            li= 'Un livre par mois est distribué.'
+            li= `Une fiche avec les avis de l'équipe et la découverte de l'auteur est incluse.`
+            li= 'Un produit dérivé en rapport avec un des sujets du livre est également inclus.'
             li= 'Langues disponibles: Français uniquement.'
             li= 'Deux genres maximum au choix.'
             li= 'Formats de poche et roman uniquement.'
+          h4= 'Choice:'
+          div(class='toggle')
+            p(class='toggle__text')= 'Poche'
+            span(class='icon-toggle-off icon-2x toggle__element ')
+            p(class='toggle__text')= 'Roman'
           p(class='card__price')= `Prix: ${prices[i++]}€`
-    div(class='toggle-offering')
-      p(class='toggle-offering__text')= 'Personel'
-      span(class='icon-toggle-off icon-2x')
-      p(class='toggle-offering__text')= 'Offrir'
+    div(class='toggle')
+      p(class='toggle__text')= 'Personel'
+      span(class='icon-toggle-off icon-2x toggle__element', id='toggle_offer')
+      p(class='toggle__text')= 'Offrir'
     
     section(class='connexion')
       h2= 'Se connecter'

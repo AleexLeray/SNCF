@@ -27,10 +27,14 @@
   content: "\f204";
 }
 .icon-toggle-on:before {
-  color: cornflowerblue;
   content: "\f205";
+}
+
+.icon-toggle-on--cornflowerblue {
+  color: cornflowerblue;
 }
 
 .icon-2x {
   font-size: 2rem;
+  padding: 0 1rem;
 }
