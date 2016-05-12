@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="stylesheets/screen.css" media="screen" title="no title" charset="utf-8">
   </head>
 
-  <body ng-controller="">
+  <body ng-controller="StoreController as store">
     <div class="containerOc">
       <div class="flexOc">
 
@@ -27,28 +27,28 @@
 
         <div class="cartesNiveauOc">
 
-          <div class="livreOc">
+          <div class="livreOc" ng-repeat="product in store.products">
             <div class="carteOc">
 
               <div class="overBoardOc">
                 <div class="hoverBoxOc">
                   <a href="#openModal" class="lienModalOc">
                     <p>
-                      {{infoLivre}}
+                      {{product.resume}}
                     </p>
-                  </a>                
+                  </a>
                 </div>
 
                 <div class="imageOc">
-                  <img ng-src="" class="imgOc" />
+                  <img ng-src="store.product.image" class="imgOc" />
                 </div>
               </div>
 
               <div class="titreOc">
-                <h4><a href="#openModal" class="lienModalOc">{{titre}}</a></h4>
+                <h4><a href="#openModal" class="lienModalOc">{{product.titre}}</a></h4>
                 <div class="priceOc">
                   <p class="prixOc">
-                    {{prix}}
+                    {{product.prix | currency:"€"}}
                   </p>
                 </div>
               </div>
@@ -69,6 +69,7 @@
       </div>
     </div>
 
-
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/olivier.js"></script>
   </body>
 </html>
