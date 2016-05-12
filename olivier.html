@@ -34,7 +34,7 @@
                 <a href="#openModal" class="lienModalOc">
                   <div class="hoverBoxOc">
                       <p>
-                        {{product.resume}}
+                        DESCRIPTION
                       </p>
                   </div>
                 </a>
@@ -55,16 +55,20 @@
             </div>
 
             <div class="modalDialogOc" id="openModal">
-              <div>
+              <div class="positionOc">
             		<a href="#close" title="Close" class="closeOc">X</a>
-            		<h2>{{product.titre}}</h2>
-            		<p>
-                  {{product.resume}}
-                </p>
-                <p>
-                  {{product.prix | currency:"€"}}
-                </p>
-                <img src="{{product.image}}" class="imgOc"/>
+                <div class="">
+                  <h2>{{product.titre}}</h2>
+              		<p>
+                    {{product.resume}}
+                  </p>
+                  <p>
+                    {{product.prix | currency:"€"}}
+                  </p>
+                </div>
+                <div class="">
+                  <img src="{{product.image}}" class="imgOc"/>
+                </div>    
             	</div>
             </div>
           </div>

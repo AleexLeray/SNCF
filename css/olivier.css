@@ -98,8 +98,7 @@ h4 {
 
 
 .imgOc {
-  height: 250px;
-  width: auto;
+  width: 12vw;
 }
 
 /*-- Titre --*/
@@ -178,6 +177,11 @@ h4 {
 \*---------- ------------*/
 
 
+.positionOc {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .modalDialogOc {
 	position: fixed;
 	font-family: Avenir, Helvetica, sans-serif;
@@ -200,9 +204,9 @@ h4 {
 }
 
 .modalDialogOc > div {
-	width: 400px;
+  width: 60%;
 	position: relative;
-	margin: 10% auto;
+	margin: 5% auto;
 	padding: 5px 20px 13px 20px;
 	border-radius: 10px;
 	background: #fff;
