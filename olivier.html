@@ -15,6 +15,15 @@
   </head>
 
   <body ng-controller="StoreController as store">
+    <header>
+    <div class="logoAl">
+      <h1><a href="index.html">La Boite à Histoires</a></h1>
+      <div class="connectAl">
+        <p>Se connecter</p>
+        <p><i class="fa fa-shopping-basket" aria-hidden="true"></i></p>
+      </div>
+    </div>
+  </header>
     <div class="containerOc">
       <div class="flexOc">
 
@@ -57,7 +66,7 @@
             <div class="modalDialogOc" id="openModal">
               <div class="positionOc">
             		<a href="#close" title="Close" class="closeOc">X</a>
-                <div class="">
+                <div class="textModalOc">
                   <h2>{{product.titre}}</h2>
               		<p>
                     {{product.resume}}
@@ -68,7 +77,7 @@
                 </div>
                 <div class="">
                   <img src="{{product.image}}" class="imgOc"/>
-                </div>    
+                </div>
             	</div>
             </div>
           </div>
@@ -77,6 +86,13 @@
 
       </div>
     </div>
+
+    <footer>
+     <div class="FooterAl">
+       <p><a href="#">Contact</a></p>
+       <p><a href="#">Mentions légales</a></p>
+     </div>
+   </footer>
 
     <script type="text/javascript" src="js/angular.min.js"></script>
     <script type="text/javascript" src="js/olivier.js"></script>
