@@ -1,0 +1,93 @@
+-
+  const normalize = {
+    path: '../../css/normalize.css',
+    integrity: 'fVquC3DHMyHQJ7MasHkVMX2RLx5O6r2+Eh/NB9eZUSRGntVASwPIr1DFKzSpwTxD'
+  };
+
+  const screen = {
+    path: '../../stylesheets/screen.css',
+    integrity: ''
+  };
+  
+  const icomoon = {
+    path: 'icomoon.css',
+    integrity: ''
+  };
+
+  const abonnement = {
+    path: 'abonnement.css',
+    integrity: ''
+  };
+
+doctype html
+
+html(lang='fr')
+  head
+    meta(charset='utf-8')
+    meta(content='width=device-width,initial-scale=1.0' name='viewport')
+    title= 'Abonnement - La Boite à Histoires'
+    link(href=normalize.path, rel='stylesheet')
+    link(href=screen.path, rel='stylesheet')
+    link(href=icomoon.path, rel='stylesheet')
+    link(href=abonnement.path, rel='stylesheet')
+
+  body
+    header
+      div(class='logoAl')
+        h1: a(href='../../index.html')= 'La Boite à Histoires'
+        div(class='connectAl')
+          p= 'Se connecter'
+          p!= `<span class='icon-shopping-basket' aria-hidden='true'></span>`
+    h1= 'Abonnement'
+    
+    section(class='cards-container')
+
+      -
+        const cards = {
+          '3 mois': 'card--orange',
+          '6 mois': 'card--yellow',
+          '1 an': 'card--green'
+        };
+        var i = 0;
+        const prices = ['29.90', '58.90', '115.90'];
+    
+      each val, title in cards
+        div(class=`card ${val}`)
+          h3= title
+          ul
+            li= 'Un livre par mois est distribué.'
+            li= `Une fiche avec les avis de l'équipe et la découverte de l'auteur est incluse.`
+            li= 'Un produit dérivé en rapport avec un des sujets du livre est également inclus.'
+            li= 'Langues disponibles: Français uniquement.'
+            li= 'Deux genres maximum au choix.'
+            li= 'Formats de poche et roman uniquement.'
+          h4= 'Choice:'
+          div(class='toggle')
+            p(class='toggle__text')= 'Poche'
+            span(class='icon-toggle-off icon-2x toggle__element ')
+            p(class='toggle__text')= 'Roman'
+          p(class='card__price')= `Prix: ${prices[i++]}€`
+    div(class='toggle')
+      p(class='toggle__text')= 'Personel'
+      span(class='icon-toggle-off icon-2x toggle__element', id='toggle_offer')
+      p(class='toggle__text')= 'Offrir'
+    
+    section(class='connexion')
+      h2= 'Se connecter'
+      h3!= `Si vous possédez un compte, vous pouvez vous connecter ici. Sinon, vous pouvez également en créer un avant d'être redirigé vers la page de paiement en cliquant <a href='#'>ici</a>.`
+      div(class='connexion__container')
+        form(action='', method='post')
+          div
+            label(for='email')='Courriel:'
+            input(id='email', placeholder='martin.dupont@posteo.de', required, type='email')
+          div
+            label(for='password')='Mot de passe:'
+            input(id='password', required, type='password')
+          div
+            button(type='submit')='Se connecter'
+    a(class='btn-validate aligned-self--center', href='#')= 'Procéder au paiement'
+    footer
+      div(class='FooterAl')
+        p: a(href='#')= 'Contact'
+        p: a(href='#')= 'Mentions légales'
+  script(async, src='abonnement.js')
