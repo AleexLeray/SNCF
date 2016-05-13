@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html ng-app="shopApp">
+  <head>
+    <meta charset="utf-8">
+    <title>La Boite à Histoires - Boutique</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font-awesome-4.6.1/css/font-awesome.css" />
+    <link rel="stylesheet" href="bootstrap-4.0.0-alpha.2/dist/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/olivier.css" />
+    <link rel="stylesheet" href="stylesheets/screen.css" media="screen" title="no title" charset="utf-8">
+  </head>
+
+  <body ng-controller="StoreController as store">
+    <header>
+    <div class="logoAl">
+      <h1><a href="index.html">La Boite à Histoires</a></h1>
+      <div class="connectAl">
+        <p>Se connecter</p>
+        <p><a href="olivier.html""<i class="fa fa-shopping-basket" aria-hidden="true"></i></a></p>
+      </div>
+    </div>
+  </header>
+    <div class="containerOc">
+      <div class="flexOc">
+
+        <div class="formulaireOc">
+          <form class="filtreOc" action="index.html" method="post">
+            <input class="textOc" type="text" placeholder="Genre">
+            <input class="boutonOc" type="button" name="Filtre" value="Filtrer">
+          </form>
+        </div>
+
+        <div class="cartesNiveauOc">
+
+          <div class="livreOc" ng-repeat="product in store.products">
+            <div class="carteOc">
+
+              <div class="overBoardOc">
+                <a href="#openModal" class="lienModalOc">
+                  <div class="hoverBoxOc">
+                      <p>
+                        DESCRIPTION
+                      </p>
+                  </div>
+                </a>
+
+                <div class="imageOc">
+                  <img ng-src="{{product.image}}" class="imgOc" />
+                </div>
+              </div>
+
+              <div class="titreOc">
+                <h4><a href="#openModal" class="lienModalOc">{{product.titre}}</a></h4>
+                <div class="priceOc">
+                  <p class="prixOc">
+                    {{product.prix | currency:"€"}}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="modalDialogOc" id="openModal">
+              <div class="positionOc">
+            		<a href="#close" title="Close" class="closeOc">X</a>
+                <div class="textModalOc">
+                  <h2>{{product.titre}}</h2>
+              		<p>
+                    {{product.resume}}
+                  </p>
+                  <p>
+                    {{product.prix | currency:"€"}}
+                  </p>
+                </div>
+                <div class="">
+                  <img src="{{product.image}}" class="imgOc"/>
+                </div>
+            	</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <footer>
+     <div class="FooterAl">
+       <p><a href="contact.html">Contact</a></p>
+       <p><a href="mentions.html">Mentions légales</a></p>
+     </div>
+   </footer>
+
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/olivier.js"></script>
+  </body>
+</html>

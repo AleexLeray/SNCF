@@ -1,0 +1,140 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass";
+@font-face {
+ font-family: "Avenir";
+ src: url('../font/Avenir-Light.ttf');
+}
+$backgroundHeaderAl: #013440;
+$colorHeaderAl: #AB1A25;
+
+body {
+  font-family: Avenir;
+}
+
+header {
+  width: 100%;
+  height: 100% auto;
+  background-color: $backgroundHeaderAl;
+  a {
+      color: $colorHeaderAl;
+  }
+    .logoAl {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      color: $colorHeaderAl;
+      padding: 20px 0px 20px 20px;
+        h1 a {
+          font-size: 50px;
+          text-decoration: none;
+          color: $colorHeaderAl;
+        }
+      .connectAl {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+          p {
+            font-size: 20px;
+            margin-right: 20px;
+          }
+      }
+    }
+}
+
+
+
+
+.contactAl {
+  background-image: url(../images/biblio.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 747px;
+    .nomAl {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      color: $colorHeaderAl;
+      font-size: 30px;
+      padding: 20px 0 40px 0;
+    }
+    .containerAl {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      padding-bottom: 50px;
+        .nameAl, .emailAl, textarea {
+          padding: 0;
+          margin: 0;
+          border: 0;
+          clear: both;
+          overflow: hidden;
+        }
+        .nameAl {
+          padding-bottom: 15px;
+        }
+        .emailAl {
+          padding-bottom: 15px;
+            input {
+              width: 300px;
+            }
+        }
+        textarea {
+          box-shadow: 4px 5px 4px  $backgroundHeaderAl;
+          margin-bottom: 15px;
+          height: 400px;
+          width: 400px;
+        }
+        .sendAl {
+          padding-bottom: 15px;
+        }
+    }
+}
+
+.mentionsAl {
+  margin-left: 10%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  text-align: justify;
+}
+
+
+.nomMentionsAl {
+  color: $colorHeaderAl;
+  font-size: 30px;
+  padding: 20px 0 40px 0;
+}
+
+
+footer {
+  margin-bottom: 0;
+  width: 100%;
+  background-color: $backgroundHeaderAl;
+    .FooterAl {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 0 20px 0;
+      font-size: 20px;
+        p {
+          padding-right: 20px;
+            a {
+              text-decoration: none;
+              color: $colorHeaderAl;
+            }
+        }
+    }
+}
