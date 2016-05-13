@@ -17,7 +17,7 @@
       display: flex;
       justify-content: space-around;
       align-items: center; 
-      background-image: url("../images/book2.jpg");
+      background-image: url("../images/book3.jpg");
       background-size: cover;
       background-position: 50% 50%;
   }
@@ -32,7 +32,7 @@
         font-size: 25px;
         font-weight: bold;
         text-shadow: 1px 1px black;
-        color: #AB1A25;
+        color: #fff;
       }
       .boite1{
         background-color: rgba(1,52,64,0.4) ;
