@@ -6,7 +6,7 @@
       background-image: url('../images/crossword.png');
  }
   #main .acceuil {
-    height: 200vh;
+    height: 182vh;
     width: 100%;
     flex-direction: column; }
     #main .acceuil .bouqin-principal {
@@ -292,9 +292,6 @@
   border: 6px solid rgba(1,52,64,0.6);
 }
 
-.text-appear:hover span {
-  color: black;
-}
 
 .btn {
   display: none;
