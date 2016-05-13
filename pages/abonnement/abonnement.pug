@@ -37,7 +37,7 @@ html(lang='fr')
         h1: a(href='../../index.html')= 'La Boite à Histoires'
         div(class='connectAl')
           p= 'Se connecter'
-          p!= `<span class='icon-shopping-basket' aria-hidden='true'></span>`
+          p!= `<a href='../../olivier.html'><span class='icon-shopping-basket' aria-hidden='true'></span></a>`
     h1= 'Abonnement'
     
     section(class='cards-container')
@@ -88,6 +88,6 @@ html(lang='fr')
     a(class='btn-validate aligned-self--center', href='#')= 'Procéder au paiement'
     footer
       div(class='FooterAl')
-        p: a(href='#')= 'Contact'
-        p: a(href='#')= 'Mentions légales'
+        p: a(href='../../contact.html')= 'Contact'
+        p: a(href='../../mentions.html')= 'Mentions légales'
   script(async, src='abonnement.js')
